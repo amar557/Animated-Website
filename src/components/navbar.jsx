@@ -14,7 +14,7 @@ function Navbar() {
     <div
       className={` ${
         isOpen && "  transition-all duration-500"
-      }  flex items-start justify-between  py-4  w-full 
+      }  flex items-start justify-between  py-4  w-full px-8
        `}
     >
       <div>
@@ -22,16 +22,19 @@ function Navbar() {
       </div>
       <ul
         className={`
-        absolute transition-all duration-500 flex  text-6xl md:text-sm gap-6 font-semibold w-full md:w-max  pt-32 md:pt-0 md:pb-0 pb-8 border-t-2 md:border-t-0  md:static
+        absolute transition-all duration-500 flex  text-6xl md:text-lg gap-6 font-semibold w-full md:w-max  pt-32 md:pt-0 md:pb-0 pb-8 border-t-2 md:border-t-0  md:static
           ${
             isOpen
               ? "  h-full  "
-              : " -top-full -translate-y-full md:-top-0 md:-translate-y-0  "
+              : " -top-full -translate-y-full md:-top-0 md:-translate-y-0   "
           }
        `}
       >
         {navElements.map((element, i) => (
-          <li key={i} className={`list-none uppercase ${i === 4 && "ms-10"}`}>
+          <li
+            key={i}
+            className={`list-none capitalize font-medium ${i === 4 && "ms-48"}`}
+          >
             {element}
           </li>
         ))}

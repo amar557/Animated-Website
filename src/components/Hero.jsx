@@ -3,7 +3,7 @@ import Navbar from "./navbar";
 
 function Hero() {
   return (
-    <div className="bg-primary h-screen px-8">
+    <div className="bg-primary h-screen ">
       <Navbar />
       <Main />
     </div>

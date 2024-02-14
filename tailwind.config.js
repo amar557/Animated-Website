@@ -6,6 +6,9 @@ export default {
       colors: {
         primary: "#f1f1f1",
       },
+      fontFamily: {
+        NeueMontreal: ["NeueMontreal"],
+      },
     },
   },
   plugins: [],
