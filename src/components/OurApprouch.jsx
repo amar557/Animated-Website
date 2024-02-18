@@ -1,4 +1,5 @@
 import profilePic from "../assets/profile.jpg";
+import { GoDotFill } from "react-icons/go";
 const socialMediaLinks = ["instagram", "behance", "facebook", "linkedin"];
 function OurApprouch() {
   return (
@@ -9,13 +10,13 @@ function OurApprouch() {
         great people.
       </div>
       <TypoGraphy />
-      <div className="border-t-[1px] border-slate-600 px-5 flex flex-col gap-10 pt-4">
+      <div className="border-t-[1px] border-slate-600 px-5 flex flex-col gap-y-10 pt-4">
         <div className="">
           <h1 className="font-NeueMontreal text-2xl font-normal text-black mb-5">
             Our approach:
           </h1>
-          <button className="bg-black p-3 text-white rounded-full uppercase ">
-            read more
+          <button className="bg-black  text-white rounded-full uppercase flex items-center py-4 px-6 font-NeueMontreal  gap-x-4 justify-center">
+            read more <GoDotFill />
           </button>
         </div>
         <div className="pb-5">
@@ -25,7 +26,6 @@ function OurApprouch() {
             className="rounded-2xl max-w-full  mx-auto"
           />
         </div>
-        <div></div>
       </div>
     </div>
   );
